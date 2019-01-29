@@ -1,0 +1,36 @@
+.hero {
+  background: center center / cover no-repeat url('../../image/background/hero_bg.png');
+}
+
+.hero__content {
+  display: flex;
+  padding: 0 20px;
+  margin-top: -10px;
+}
+
+.hero__description,
+.hero__burger {
+  flex: 1;
+}
+
+.hero__burger {
+  margin-right: 12px;
+}
+
+.hero__description {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.hero__description-text {
+  display: block;
+  font-family: lifehack;
+  font-size: 65px;
+  text-transform: lowercase;
+  line-height: 61px;
+  color: #fff;
+  margin-bottom: 70px;
+  margin-top: 10px;
+  letter-spacing: -1.63px;
+}

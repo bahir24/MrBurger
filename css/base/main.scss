@@ -1,3 +1,13 @@
+$orange: #f9b43b;
+$red: #e45028;
+$black: #2f3234;
+
+
 @import "./fonts.scss";
 @import "./normalize.scss";
 @import "./base.scss";
+@import "../blocks/hero.scss";
+@import "../blocks/header.scss";
+@import "../blocks/button.scss";
+@import "../blocks/screen-head.scss";
+@import "../blocks/best.scss";

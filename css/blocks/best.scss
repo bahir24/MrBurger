@@ -1,0 +1,38 @@
+.best {
+  background: center center / cover no-repeat url('../../image/background/best_bg.png');
+  color: $black;
+  text-align: center;
+}
+
+.strengths {
+  display: flex;
+  margin: 0;
+  padding-top: 26px;
+}
+
+.strengths__list {
+  display: flex;
+  margin: 0;
+}
+
+
+
+.strengths__item {
+  display: inline-flex;
+  width: 33%;
+  flex-direction: column;
+}
+
+.strengths__item-head {
+  font-family: lifehack;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.strengths__item-text {
+  font-family: ubuntu;
+  font-size: 14px;
+  font-weight: 100;
+  color: $black;
+  line-height: 24.07px;
+}

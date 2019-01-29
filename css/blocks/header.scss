@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__buttons {
+  margin-bottom: 9px;
+}
+
+.navigation {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navigation__list {
+
+  font-family: ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-inline-start: 0px;
+  
+}
+
+.navigation__item {
+  display: inline-flex;
+  align-items: center;
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 14px;
+  }
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.navigation__link {
+  color: #fff;
+  text-decoration: none;
+  
+}
