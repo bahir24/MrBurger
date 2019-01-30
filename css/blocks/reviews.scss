@@ -1,0 +1,43 @@
+.reviews {
+  background-color: $black;
+  
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+
+
+}
+
+.reviews__item {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  background: center center no-repeat / 350%;
+  filter: grayscale(50);
+  
+}
+
+.reviews__content {
+  padding: 50px 20px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 1s;
+  &:hover {
+    opacity: 100;
+  }
+}
+
+.reviews__content-head {
+  font-family: gagalin;
+  font-size: 14px;
+}
+
+.rewiews__content-text {
+  font-family: ubuntu;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
