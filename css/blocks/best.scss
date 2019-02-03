@@ -2,12 +2,15 @@
   background: center center / cover no-repeat url('../../image/background/best_bg.png');
   color: $black;
   text-align: center;
+  .screen-head {   // correction # 7
+    margin-bottom: 31px;
+  }
 }
 
 .strengths {
   display: flex;
   margin: 0;
-  padding-top: 33px;
+  // padding-top: 33px; correction # 7
 }
 
 .strengths__list {
