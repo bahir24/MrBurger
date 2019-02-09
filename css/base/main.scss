@@ -1,6 +1,7 @@
 $orange: #f9b43b;
 $red: #e45028;
 $black: #2f3234;
+$gray: #2f3234;
 
 
 @import "./fonts.scss";
@@ -11,4 +12,6 @@ $black: #2f3234;
 @import "../blocks/header.scss";
 @import "../blocks/button.scss";
 @import "../blocks/best.scss";
+@import "../blocks/team.scss";
 @import "../blocks/reviews.scss";
+@import "../blocks/menu.scss";

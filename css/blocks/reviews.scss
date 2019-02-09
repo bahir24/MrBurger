@@ -15,21 +15,23 @@
   display: inline-block;
   width: 25%;
   height: 50%;
-  background: center center no-repeat / 350%;
-  filter: grayscale(0);
-  transition: filter 1s;
-  &:hover {
-    filter: grayscale(50);
-  }
-  
+  background: center no-repeat / cover ;
+  filter: grayscale(100);
 }
 
+.head-cut {
+  background: -60px center no-repeat / cover;
+}
+
+
 .reviews__content {
+  height: 100%;
   padding: 50px 20px;
   color: #fff;
-  opacity: 0;
+  background: rgba(#000, .5);
   transition: opacity 1s;
-  &:hover {
+  opacity: 0;
+    &:hover {
     opacity: 100;
   }
 }

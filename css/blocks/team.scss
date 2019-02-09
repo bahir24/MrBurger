@@ -1,0 +1,113 @@
+.team {
+  background: center / cover no-repeat url('../../image/team/team_bg.png');
+  position: relative;
+}
+
+.team__screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba($gray, .93)
+}
+
+.team__content {
+  padding-left: 70px;
+}
+
+.team__accordeon-item {
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.team__accordeon-name {
+  font-size: 14px;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:active {
+    color: $orange;
+  }
+}
+
+.team__accordeon-name {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  margin-bottom: 20px;
+  align-items: center;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -18px;
+    top: 8px;
+    width: 0;
+    height: 0;
+  }
+  &:before {
+    border-top: 7px solid $orange;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 0px solid transparent;
+    transform: rotate(0deg);
+    transition: .3s;
+  }
+  &:after {
+    display: none;
+    border-bottom: 7px solid $orange;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 0px solid transparent;
+  }
+}
+
+.team__accordeon-description {
+  display: none;
+}
+
+.item__active {
+  color: #fff;
+  .team__accordeon-description {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    font-family: Ubuntu;
+    font-size: 14px;
+  }
+}
+
+.team__accordeon-icon {
+  text-align: center;
+  width: 26%;
+}
+
+.team__accordeon-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.team__accordeon-content {
+  text-align: left;
+  padding-left: 14px;
+  width: 70%;
+}
+
+.team__accordeon-position {
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.team__accordeon-text {
+  font-weight: 300;
+}
