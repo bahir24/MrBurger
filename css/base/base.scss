@@ -50,11 +50,11 @@ ul, li {
   overflow: hidden;
   min-height: 100%;
   width: 100%;
-  min-width: rem(943px);
+  // min-width: rem(943px);
 }
 
 .container {
-  width: rem(943px);
+  max-width: rem(943px);
   margin: 0 auto;  
 }
 
