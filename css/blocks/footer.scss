@@ -1,0 +1,58 @@
+.footer {
+    background: url('../../image/footer.png') center bottom no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(10px) 0;
+  }
+  
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include phones {
+      flex-direction: column;
+    }
+  }
+  
+  .footer__col {
+    font-size: rem(14px);
+    font-family: ubuntu;
+    width: 50%;
+    margin-bottom: rem(15px);
+    @include phones {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  .footer__address {      
+      font-weight: 300;
+    color: #ffffff;
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+  }
+  
+  .footer__phone {
+    color: $red;  
+    text-decoration: none;
+    font-size: rem(14px);
+  }
+
+  .footer__phone-pic {
+    width: rem(11px);
+    height: rem(11px);
+    margin-right: rem(10px);
+  }
+  
+  .footer__col-right {
+    text-align: right;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;  
+    @include phones {
+      justify-content: center;
+    }
+  }

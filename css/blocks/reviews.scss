@@ -17,16 +17,20 @@
   height: 50%;
   background: center no-repeat / cover ;
   filter: grayscale(100);
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
 }
 
 .head-cut {
-  background: -60px center no-repeat / cover;
+  background: rem(-60px) center no-repeat / cover;
 }
 
 
 .reviews__content {
   height: 100%;
-  padding: 50px 20px;
+  padding: rem(50px) rem(20px);
   color: #fff;
   background: rgba(#000, .5);
   transition: opacity 1s;
@@ -34,19 +38,30 @@
     &:hover {
     opacity: 100;
   }
+  @include tablets {
+    font-size: rem(14px);
+    padding: 0 12%;
+    text-align: center;
+  }
 }
 
 .reviews__content-head {
   font-family: gagalin;
-  font-size: 14px;
-  margin-bottom: 14px; //correction
+  font-size: rem(14px);
+  margin-bottom: rem(14px); 
+  @include tablets {
+    margin-bottom: rem(14px);
+  }
 }
 
 .rewiews__content-text {
   font-family: ubuntu;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0; //correction
-  margin-bottom: 14px; //correction
+  font-size: rem(14px);
+  line-height: rem(24px);
+  margin: 0; 
+  margin-bottom: rem(14px); 
+  @include phones {
+    display: none;
+  }
 }

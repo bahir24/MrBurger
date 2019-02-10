@@ -1,3 +1,13 @@
+html {
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 13px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -36,21 +46,23 @@ ul, li {
 }
 
 .wrapper {
+  position: relative;
   overflow: hidden;
   min-height: 100%;
   width: 100%;
-  min-width: 943px;
+  min-width: rem(943px);
 }
 
 .container {
-  width: 943px;
+  width: rem(943px);
   margin: 0 auto;  
 }
 
 .section {
-  min-height: 650px;
+  min-height: rem(650px);
   height: 100vh;
-  &_centered {
+  position: relative;
+    &_centered {
     .container {
       height: 100%;
       display: flex;
@@ -61,6 +73,9 @@ ul, li {
       text-align: center;
       width: 100%;
     }
+  }
+  @include tablets() {
+    padding: 5px;
   }
 }
 

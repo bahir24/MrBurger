@@ -16,24 +16,28 @@
 }
 
 .team__content {
-  padding-left: 70px;
+  padding-left: rem(70px);
 }
 
 .team__accordeon-item {
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
   &:last-child {
     margin-bottom: 0;
   }
 }
 
 .team__accordeon-name {
-  font-size: 14px;
-  margin-bottom: 40px;
+  font-size: rem(14px);
+  margin-bottom: rem(40px);
+  cursor: pointer;
   &:last-child {
     margin-bottom: 0;
   }
   &:active {
     color: $orange;
+  }
+  @include tablets() {
+    font-size: rem(25px);
   }
 }
 
@@ -42,31 +46,31 @@
   text-decoration: none;
   position: relative;
   display: inline-flex;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   align-items: center;
   &:before,
   &:after {
     content: "";
     display: block;
     position: absolute;
-    left: -18px;
-    top: 8px;
+    left: rem(-18px);
+    top: rem(8px);
     width: 0;
     height: 0;
   }
   &:before {
-    border-top: 7px solid $orange;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    border-top: rem(7px) solid $orange;
+    border-left: rem(5px) solid transparent;
+    border-right: rem(5px) solid transparent;
     border-bottom: 0px solid transparent;
     transform: rotate(0deg);
     transition: .3s;
   }
   &:after {
     display: none;
-    border-bottom: 7px solid $orange;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    border-bottom: rem(7px) solid $orange;
+    border-left: rem(5px) solid transparent;
+    border-right: rem(5px) solid transparent;
     border-top: 0px solid transparent;
   }
 }
@@ -82,7 +86,7 @@
     width: 100%;
     flex: 1;
     font-family: Ubuntu;
-    font-size: 14px;
+    font-size: rem(14px);
   }
 }
 
@@ -92,20 +96,20 @@
 }
 
 .team__accordeon-pic {
-  width: 100px;
-  height: 100px;
+  width: rem(100px);
+  height: rem(100px);
   border-radius: 50%;
 }
 
 .team__accordeon-content {
   text-align: left;
-  padding-left: 14px;
+  padding-left: rem(14px);
   width: 70%;
 }
 
 .team__accordeon-position {
   font-weight: 500;
-  margin-bottom: 14px;
+  margin-bottom: rem(14px);
 }
 
 .team__accordeon-text {
