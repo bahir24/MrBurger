@@ -43,6 +43,9 @@
 	text-decoration: none;
   position: relative;
   background: rgba(#000, .5);
+  @include tablets {
+    width: rem(40px);
+  }
 }
 
 .menu__item-text {
@@ -57,6 +60,9 @@
   left: 50%;
   top: 100%;
   margin-top: rem(-20px);
+  @include tablets {
+    font-size: rem(30px);
+  }
 }
 
 .menu__content {

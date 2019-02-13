@@ -29,6 +29,7 @@
   @include tablets() {
     float: none;
     width: auto;
+    
   }
 }
 
@@ -48,6 +49,7 @@
   @include tablets() {
     padding-top: 0;
   }
+  
 }
 
 .hero__description-text {
@@ -58,4 +60,7 @@
   line-height: rem(61px);
   color: #fff;
   letter-spacing: -1.63px;
+  @include phones {
+   font-size: rem(60px);
+  }
 }

@@ -50,6 +50,7 @@ ul, li {
   overflow: hidden;
   min-height: 100%;
   width: 100%;
+  
   // min-width: rem(943px);
 }
 
@@ -77,6 +78,7 @@ ul, li {
   @include tablets() {
     padding: 5px;
   }
+  
 }
 
 * {

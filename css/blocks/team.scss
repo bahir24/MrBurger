@@ -12,11 +12,18 @@
   top: 0;
   bottom: 0;
   width: 50%;
-  background: rgba($gray, .93)
+  background: rgba($gray, .93);
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .team__content {
   padding-left: rem(70px);
+  @include tablets {
+    text-align: center;
+    padding: 0 rem(10px);
+  }
 }
 
 .team__accordeon-item {
@@ -77,6 +84,7 @@
 
 .team__accordeon-description {
   display: none;
+  
 }
 
 .item__active {
@@ -87,6 +95,10 @@
     flex: 1;
     font-family: Ubuntu;
     font-size: rem(14px);
+    @include tablets {
+      align-items: center;
+    flex-direction: column;
+    }
   }
 }
 
@@ -105,6 +117,9 @@
   text-align: left;
   padding-left: rem(14px);
   width: 70%;
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .team__accordeon-position {

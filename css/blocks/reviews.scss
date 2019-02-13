@@ -1,6 +1,8 @@
 .reviews {
   background-color: $black;
-  
+  @include tablets {
+    padding: 0;
+  }
 }
 
 .reviews__list {
@@ -39,9 +41,16 @@
     opacity: 100;
   }
   @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: rem(14px);
-    padding: 0 12%;
+    padding: 0 rem(5px);
     text-align: center;
+    .button {
+      padding: rem(10px) rem(15px);
+    }
   }
 }
 
@@ -61,6 +70,7 @@
   line-height: rem(24px);
   margin: 0; 
   margin-bottom: rem(14px); 
+  text-overflow: ellipsis;
   @include phones {
     display: none;
   }
