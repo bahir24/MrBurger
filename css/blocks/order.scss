@@ -25,8 +25,7 @@
 .order__form-col {
     width: 45%;
     margin-left: 5%;
-
-    @include phones {
+    @include tablets {
         width: 100%;
         margin: 0;
     }
@@ -35,6 +34,7 @@
 .order__form-row {
     margin-bottom: rem(16px);
     display: flex;
+
 }
 
 .order__form-label {
@@ -57,19 +57,13 @@
     width: 100%;
     flex: 1;
     margin-left: rem(10px);
-     @include phones {
-        &:first-child{
-        margin-left: 0;
-        }
-    }
+    
 }
 
 .order__form-row {
     display: flex;
     margin-left: rem(-10px);
-    @include phones {
-        margin-left: 0;
-    }
+    
 }
 
 .order__form-input_textarea {
@@ -84,6 +78,9 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+   
+    left: rem(10px);
+   
 }
 
 .order__radio-elem {
@@ -155,6 +152,7 @@
 }
 
 .order__form-button {
+    position: relative;
     margin-right: rem(20px);
     border: 0;
     background: $red;
@@ -164,6 +162,7 @@
     color: #ffffff;
     padding: rem(10px) rem(15px);
     cursor: pointer;
+    left: rem(10px);
 }
 
 .order__form-button_reset {

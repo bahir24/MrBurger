@@ -21,7 +21,7 @@
   .footer__col {
     font-size: rem(14px);
     font-family: ubuntu;
-    width: 50%;
+    // width: 50%;
     margin-bottom: rem(15px);
     padding: 0 rem(5px);
    
@@ -54,6 +54,7 @@
     text-align: right;
     margin-bottom: 0;
     display: flex;
+    flex: 1;
     justify-content: flex-end;  
     @include phones {
       justify-content: center;

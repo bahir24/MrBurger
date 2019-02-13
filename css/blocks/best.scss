@@ -25,7 +25,7 @@
 
 .strengths__item {
   margin-bottom: rem(50px);
-  padding: 0 rem(14px);
+  padding: 0 rem(8px);
   display: flex;
   flex-direction: column;
   // justify-content: center;
@@ -53,6 +53,12 @@
   // svg {
   //   // max-width: 95%;
   // }
+}
+
+.strengths__description {
+  display: inline-flex;
+  flex-direction: column;
+  width: 70%;
 }
 
 .strengths__item-head {

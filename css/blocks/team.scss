@@ -31,6 +31,7 @@
   &:last-child {
     margin-bottom: 0;
   }
+
 }
 
 .team__accordeon-name {
@@ -61,7 +62,7 @@
     display: block;
     position: absolute;
     left: rem(-18px);
-    top: rem(8px);
+    top: rem(27px);
     width: 0;
     height: 0;
   }
@@ -84,17 +85,22 @@
 
 .team__accordeon-description {
   display: none;
-  
 }
 
 .item__active {
   color: #fff;
+  .team__accordeon-name {
+    &:before {
+    transform: rotate(180deg);
+    }
+  }
   .team__accordeon-description {
     display: flex;
     width: 100%;
     flex: 1;
     font-family: Ubuntu;
     font-size: rem(14px);
+    
     @include tablets {
       align-items: center;
     flex-direction: column;
@@ -104,7 +110,7 @@
 
 .team__accordeon-icon {
   text-align: center;
-  width: 26%;
+  
 }
 
 .team__accordeon-pic {
