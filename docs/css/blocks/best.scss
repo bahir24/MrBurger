@@ -1,0 +1,88 @@
+.best {
+  background: center center / cover no-repeat url('../../image/background/best_bg.png');
+  color: $black;
+  text-align: center;
+  .screen-head {   // correction # 7
+    margin-bottom: rem(31px);
+  }
+}
+
+.strengths {
+  display: flex;
+  margin: 0;
+  
+}
+
+.strengths__list {
+  display: flex;
+  margin: 0;
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+
+
+.strengths__item {
+  margin-bottom: rem(50px);
+  padding: 0 rem(8px);
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  @include phones {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.strengths__icon {
+  margin-bottom: rem(32px);
+  width: 40%;
+  height: rem(85px);
+  @include phones {
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: rem(5px);
+  }
+  // svg {
+  //   // max-width: 95%;
+  // }
+}
+
+.strengths__description {
+  display: inline-flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.strengths__item-head {
+  font-family: lifehack;
+  font-weight: 500;
+  font-size: rem(24px);
+  letter-spacing: -0.6px;
+  line-height: rem(29px);
+  margin-bottom: rem(14px);
+  @include phones {
+    font-size: rem(20px);
+    flex: 1;
+    margin-right: rem(5px);
+  }
+}
+
+.strengths__item-text {
+  margin: 0;
+  font-family: ubuntu;
+  font-size: rem(14px);
+  font-weight: 100;
+  color: $black;
+  line-height: rem(24px);
+  @include phones {
+    flex: 2;
+  }
+}

@@ -1,0 +1,138 @@
+.team {
+  background: center / cover no-repeat url('../../image/team/team_bg.png');
+  position: relative;
+}
+
+.team__screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba($gray, .93);
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.team__content {
+  padding-left: rem(70px);
+  @include tablets {
+    text-align: center;
+    padding: 0 rem(10px);
+  }
+}
+
+.team__accordeon-item {
+  margin-bottom: rem(40px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.team__accordeon-name {
+  font-size: rem(14px);
+  margin-bottom: rem(40px);
+  cursor: pointer;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:active {
+    color: $orange;
+  }
+  @include tablets() {
+    font-size: rem(25px);
+  }
+}
+
+.team__accordeon-name {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  margin-bottom: rem(20px);
+  align-items: center;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: rem(-18px);
+    top: rem(27px);
+    width: 0;
+    height: 0;
+  }
+  &:before {
+    border-top: rem(7px) solid $orange;
+    border-left: rem(5px) solid transparent;
+    border-right: rem(5px) solid transparent;
+    border-bottom: 0px solid transparent;
+    transform: rotate(0deg);
+    transition: .3s;
+  }
+  &:after {
+    display: none;
+    border-bottom: rem(7px) solid $orange;
+    border-left: rem(5px) solid transparent;
+    border-right: rem(5px) solid transparent;
+    border-top: 0px solid transparent;
+  }
+}
+
+.team__accordeon-description {
+  display: none;
+}
+
+.item__active {
+  color: #fff;
+  .team__accordeon-name {
+    &:before {
+    transform: rotate(180deg);
+    }
+  }
+  .team__accordeon-description {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    font-family: Ubuntu;
+    font-size: rem(14px);
+    
+    @include tablets {
+      align-items: center;
+    flex-direction: column;
+    }
+  }
+}
+
+.team__accordeon-icon {
+  text-align: center;
+  
+}
+
+.team__accordeon-pic {
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+}
+
+.team__accordeon-content {
+  text-align: left;
+  padding-left: rem(14px);
+  width: 70%;
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.team__accordeon-position {
+  font-weight: 500;
+  margin-bottom: rem(14px);
+}
+
+.team__accordeon-text {
+  font-weight: 300;
+}

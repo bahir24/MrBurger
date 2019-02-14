@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__buttons {
+  padding-bottom: rem(9px); 
+}
+
+.navigation {
+  display: inline-block;
+  margin-right: rem(5px);
+  @include tablets() {
+    display: none;
+  }
+}
+
+.navigation__list {
+
+  font-family: ubuntu;
+  font-size: rem(13px);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0px;
+  
+}
+
+.navigation__item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: rem(5px); 
+  &:after {
+    content: "";
+    display: inline-block;
+    width: rem(4px);
+    height: rem(4px);
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: rem(5px);
+  }
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.navigation__link {
+  color: #fff;
+  text-decoration: none;
+  
+}

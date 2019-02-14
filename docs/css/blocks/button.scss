@@ -1,0 +1,11 @@
+.button {
+  display: inline-block;
+  font-family: ubuntu;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: rem(13px);
+  background-color: $red;
+  border: none;
+  border-radius: rem(5px);
+  padding: rem(10px) rem(15px);
+}

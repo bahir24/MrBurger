@@ -1,0 +1,66 @@
+.hero {
+  background: center center / cover no-repeat url('../../image/background/hero_bg.png');
+  position: relative;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.75;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20%;
+  }
+}
+
+
+.hero__description,
+.hero__burger {
+  width: 50%;
+  @include tablets() {
+    float: none;
+    width: auto;
+    
+  }
+}
+
+.hero__burger {
+  text-align: right;
+}
+
+.hero__burger-img {
+  width: 100%;
+}
+
+.hero__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: rem(60px) rem(13px) 0;
+  @include tablets() {
+    padding-top: 0;
+  }
+  
+}
+
+.hero__description-text {
+  display: block;
+  font-family: lifehack;
+  font-size: rem(65px);
+  text-transform: lowercase;
+  line-height: rem(61px);
+  color: #fff;
+  letter-spacing: -1.63px;
+  @include phones {
+   font-size: rem(60px);
+  }
+}

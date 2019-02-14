@@ -1,0 +1,84 @@
+.menu {
+  background: center / cover no-repeat url('../../image/background/menu.png');
+  position: relative;
+  .screen-head {
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+}
+
+.menu__list {
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.menu__item {
+  height: 100%;
+  // background-position:center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  
+  &_meat {
+    background: center / cover no-repeat url('../../image/menu/meat.jpg');
+  }
+  &_vegan {
+    background: center / cover no-repeat url('../../image/menu/vegan.jpg');
+  }
+  &_diet {
+    background: center / cover no-repeat url('../../image/menu/diet.jpg');
+  }
+ 
+}
+
+.menu__item-head {
+	width: rem(80px);
+	display: block;
+	height: 100%;
+	float: left;
+	text-decoration: none;
+  position: relative;
+  background: rgba(#000, .5);
+  @include tablets {
+    width: rem(40px);
+  }
+}
+
+.menu__item-text {
+  font-size: rem(40px);
+	color: #fff;
+	font-family: gagalin;
+	text-align: center;
+	white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 100%;
+  margin-top: rem(-20px);
+  @include tablets {
+    font-size: rem(30px);
+  }
+}
+
+.menu__content {
+  height: 100%;
+	float: left;
+	background: rgba(#2f3234, .93);
+	width: 0;
+	overflow: hidden;
+}
+
+.menu__content-text {
+  font-family: ubuntu;
+	font-size: rem(14px);
+	color: #fff;
+	padding: rem(60px) rem(30px);
+	width: 100%;
+  line-height: 1.8;
+  display: none;
+}
