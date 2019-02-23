@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=fa60cc41-ab13-41ee-bab7-6ea494b60e1e&lang=ru_RU" type="text/javascript">
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -63,8 +65,8 @@
                 Заказать
               </button>
               <a class="hamburger-menu-link" href="">
-                  <div class="hamburger-menu-link__bars"></div>
-                </a>
+                <div class="hamburger-menu-link__bars"></div>
+              </a>
             </div>
           </header>
 
@@ -393,7 +395,18 @@
 
 
       <section class="section map">
-        <div class="yandex"></div>
+        <div class="yandex" id="yandex">
+            
+            <script type="text/javascript">      
+              ymaps.ready(init);
+              function init() { 
+                    var myMap = new ymaps.Map('yandex', {
+                    center: [59.92, 30.34],
+                    zoom: 12
+                  });
+              }
+          </script>
+        </div>
         <footer class="footer">
           <div class="container footer__content">
             <div class="footer__col">
@@ -443,5 +456,7 @@
       </section>
     </div>
   </div>
+  <!-- <script src="https://api-maps.yandex.ru/2.1&lang=ru_RU">
+    </script> -->
 </body>
 </html>
