@@ -1,0 +1,141 @@
+.range {
+  background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 50%, #f9b43b 100%);
+}
+
+.range__button {
+  position: absolute;
+  background: center center /cover no-repeat url('../../image/icons/range/range_button-bg.png');
+  width: 90px;
+  height: 90px;
+  top: 7.4%;
+  left: 7.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  @include phones {
+    top: 6%;
+    left: 1%;
+   }
+}
+
+.range__button-icon {
+  width: 46px;
+  height: 44px;
+  margin-bottom: 3px;
+}
+
+.range__button-head {
+  font-family: Gagalin;
+  font-size: 14px;
+  
+  color: #fff;
+}
+
+.range__content {
+  display: flex;
+  align-self: center;
+  @include tablets {
+    flex-direction: column;
+    width: 73%;
+  }
+  @include phones {
+    width: 95%;    
+  }
+}
+
+.range__burger,
+  .range__description {
+    width: 50%;
+    @include tablets {
+      
+      width: 100%;
+    }
+  }
+
+.range__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include tablets {
+    display: block;
+    width: 100%;
+  }
+}
+
+.range__burger-pic {
+  width: 100%;
+}
+
+.range__description {
+ .screen-head {
+   color: #fff;
+   text-align: left;
+   margin-bottom: 44px;
+   @include tablets {
+    text-align: center;
+   }
+ }
+ 
+}
+
+.range__description-text {
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 30px;
+  @include tablets {
+    text-align: center;
+   }
+}
+
+.range__description-sale {
+  @include tablets {
+    text-align: center;
+   }
+}
+
+.range__description-price {
+  display: inline;
+  color: $red;
+  font-size: 72px;
+  font-family: Gagalin;
+  margin-right: 30px;
+  &:after {
+    content: 'рублей';
+  font-size: 30px;
+  padding-left: 10px;
+  }
+}
+
+.kkal__icon {
+  position: absolute;
+  bottom: 7.4%;
+  left: 7.4%;
+  width: 60px;
+  height: 75px;
+  opacity: 0.6;
+  @include tablets {
+    position: absolute;
+    top: 7.4%;
+    right: 7.4%;
+    left: auto;
+   }
+   @include phones {
+    top: 6%;
+    right: 1%;
+   }
+}
+
+.kkal__volume {
+  font-family: gagalin;
+  font-size: 20px;
+
+}
+
+.kkal__head {
+  font-family: gagalin;
+  font-size: 14px;
+}
