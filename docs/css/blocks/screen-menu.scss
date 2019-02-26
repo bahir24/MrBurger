@@ -1,0 +1,70 @@
+.screen-menu {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  // top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $gray;
+  font-family: ubuntu;
+}
+
+.menu__active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-menu__logo {
+  position: absolute;
+  top: 1%;
+  left: 4%;
+}
+
+.screen-menu__close {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+}
+
+.screen-menu__list {
+  display: flex;
+  height: 50%;
+  
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screen-menu__item {
+  display: block;
+  margin-bottom: 20px;
+  &:after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #fff;
+    left: 50%;
+    bottom: 100%;
+    margin-bottom: 15px;
+    // padding-top: 20px;
+  }
+  &:first-child {   
+    margin-bottom: 15px;
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+.screen-menu__item-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+}
