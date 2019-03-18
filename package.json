@@ -1,0 +1,26 @@
+{
+  "name": "trainee",
+  "version": "1.0.0",
+  "description": "learn",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  },
+  "scripts": {
+   "gulp" : "gulp"
+  },
+  "keywords": [],
+  "author": "mihail",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahir24/MrBurger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bahir24/MrBurger/issues"
+  },
+  "homepage": "https://github.com/bahir24/MrBurger#readme"
+}
