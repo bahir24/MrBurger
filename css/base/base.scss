@@ -1,3 +1,13 @@
+html {
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 13px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -24,27 +34,36 @@ h6 {
   padding: 0;
 }
 
-ul, li {
+p {
   margin: 0;
   padding: 0;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .wrapper {
+  position: relative;
   overflow: hidden;
   min-height: 100%;
   width: 100%;
-  min-width: 943px;
+  
+  // min-width: rem(943px);
 }
 
 .container {
-  width: 943px;
+  max-width: rem(943px);
   margin: 0 auto;  
 }
 
 .section {
-  min-height: 650px;
+  min-height: rem(650px);
   height: 100vh;
-  &_centered {
+  position: relative;
+    &_centered {
     .container {
       height: 100%;
       display: flex;
@@ -56,6 +75,10 @@ ul, li {
       width: 100%;
     }
   }
+  @include tablets() {
+    padding: 5px;
+  }
+  
 }
 
 * {

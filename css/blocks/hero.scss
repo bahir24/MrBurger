@@ -1,5 +1,6 @@
 .hero {
   background: center center / cover no-repeat url('../../image/background/hero_bg.png');
+  position: relative;
 }
 
 .hero__container {
@@ -13,32 +14,53 @@
   justify-content: center;
   align-items: center;
   flex: 0.75;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20%;
+  }
 }
 
 
 .hero__description,
 .hero__burger {
   width: 50%;
+  @include tablets() {
+    float: none;
+    width: auto;
+    
+  }
 }
 
 .hero__burger {
   text-align: right;
 }
 
+.hero__burger-img {
+  width: 100%;
+}
+
 .hero__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px 13px 0;
+  padding: rem(60px) rem(13px) 0;
+  @include tablets() {
+    padding-top: 0;
+  }
+  
 }
 
 .hero__description-text {
   display: block;
   font-family: lifehack;
-  font-size: 65px;
+  font-size: rem(65px);
   text-transform: lowercase;
-  line-height: 61px;
+  line-height: rem(61px);
   color: #fff;
-  // margin-top: 10px: correction # 6
   letter-spacing: -1.63px;
+  @include phones {
+   font-size: rem(60px);
+  }
 }

@@ -14,15 +14,11 @@
     <div class="maincontent">
       <section class="section hero">
         <div class="container hero__container">
-
           <header class="header">
-
             <div class="logo">
               <img src="./image/icons/logo/logo.png" class="logo__image" alt="Лого Mr. Burger">
             </div>
-
             <div class="header__buttons">
-
               <nav class="navigation">
                 <ul class="navigation__list">
                   <li class="navigation__item">
@@ -63,10 +59,12 @@
                 </ul>
               </nav>
 
-              <button type="button" class="button order">
+              <button type="button" class="button">
                 Заказать
               </button>
-
+              <a class="hamburger-menu-link" href="">
+                  <div class="hamburger-menu-link__bars"></div>
+                </a>
             </div>
           </header>
 
@@ -83,61 +81,150 @@
         </div>
       </section>
 
-      <div class="section section_centered best">
+      <section class="section section_centered best">
         <div class="container">
 
           <h1 class="screen-head best">Мы лучшие</h1>
-
           <div class="strengths">
-
             <ul class="strengths__list">
-
               <li class="strengths__item">
-
-                <div class="strengths__icon">
-                  <img src="./image/icons/best/meat.svg" alt="Мясо" class="strengths__icon-pic">
-                </div>
-
-                <h2 class="strengths__item-head">100% свежее мясо</h2>
-
+                  <svg class="strengths__icon" fill="#E35028">
+                      <use xlink:href="./svg/best.svg#meat"></use>
+                    </svg>
+                <div class="strengths__description">
+                  <h2 class="strengths__item-head">100% свежее мясо</h2>
                 <p class="strengths__item-text">
-                  Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
                 </p>
+              </div>
               </li>
-
               <li class="strengths__item">
-
-                <div class="strengths__icon">
-                  <img src="./image/icons/best/hand.svg" alt="Мясо" class="strengths__icon-pic">
-                </div>
-
+                  <svg class="strengths__icon" fill="#F9B43B">
+                      <use xlink:href="./svg/best.svg#hand"></use>
+                    </svg>
+                    <div class="strengths__description">
                 <h2 class="strengths__item-head">Ручная сборка</h2>
-
                 <p class="strengths__item-text">
                   Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
                   притягивает сюжетный реформаторский пафос.
                 </p>
+              </div>
               </li>
-
               <li class="strengths__item">
-
-                <div class="strengths__icon">
-                  <img src="./image/icons/best/natural.svg" alt="Мясо" class="strengths__icon-pic">
-                </div>
-
+                  <svg class="strengths__icon" fill="#8BC03F">
+                      <use xlink:href="./svg/best.svg#natural"></use>
+                    </svg>
+                    <div class="strengths__description">
                 <h2 class="strengths__item-head">Натуральные ингредиенты</h2>
-
                 <p class="strengths__item-text">
                   Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
                 </p>
               </li>
-
+            </div>
             </ul>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="section team">
+        <div class="team__screen">
+          <div class="team__content">
+            <h1 class="screen-head">Команда</h1>
+            <ul class="team__accordeon">
+              <li class="team__accordeon-item">
+                <a class="team__accordeon-name screen-head" href="#">Ричард Джеймс</a>
+                <div class="team__accordeon-description">
+                  <div class="team__accordeon-icon">
+                    <img src="./image/team/employee.jpg" alt="Сотрудник" class="team__accordeon-pic">
+                  </div>
+                  <div class="team__accordeon-content">
+                    <h3 class="team__accordeon-position">Оператор</h3>
+                    <p class="team__accordeon-text">С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="team__accordeon-item item__active">
+                <a class="team__accordeon-name screen-head" href="#">Ричард Джеймс</a>
+                <div class="team__accordeon-description">
+                  <div class="team__accordeon-icon">
+                    <img src="./image/team/employee.jpg" alt="Сотрудник" class="team__accordeon-pic">
+                  </div>
+                  <div class="team__accordeon-content">
+                    <h3 class="team__accordeon-position">Оператор</h3>
+                    <p class="team__accordeon-text">С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="team__accordeon-item">
 
-      <div class="section reviews">
+                <a class="team__accordeon-name screen-head" href="#">Ричард Джеймс</a>
+                <div class="team__accordeon-description">
+                  <div class="team__accordeon-icon">
+                    <img src="./image/team/employee.jpg" alt="Сотрудник" class="team__accordeon-pic">
+                  </div>
+                  <div class="team__accordeon-content">
+                    <h3 class="team__accordeon-position">Оператор</h3>
+                    <p class="team__accordeon-text">С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="team__accordeon-item">
+                <a class="team__accordeon-name screen-head" href="#">Ричард Джеймс</a>
+                <div class="team__accordeon-description">
+                  <div class="team__accordeon-icon">
+                    <img src="./image/team/employee.jpg" alt="Сотрудник" class="team__accordeon-pic">
+                  </div>
+
+                  <div class="team__accordeon-content">
+                    <h3 class="team__accordeon-position">Оператор</h3>
+                    <p class="team__accordeon-text">С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section menu">
+        <h1 class="screen-head">Меню</h1>
+        <ul class="menu__list">
+          <li class="menu__item menu__item_meat">
+            <a href="" class="menu__item-head">
+              <div class="menu__item-text">Для мясоедов</div>
+              <div class="menu__content">
+                <p class="menu__content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                  blanditiis omnis corporis cumque, laboriosam optio explicabo temporibus possimus libero voluptatum
+                  natus dolor expedita quaerat, consequatur earum veritatis nobis deserunt quas.</p>
+              </div>
+            </a>
+          </li>
+          <li class="menu__item menu__item_vegan">
+            <a href="" class="menu__item-head">
+              <div class="menu__item-text">Для мясоедов</div>
+              <div class="menu__content">
+                <p class="menu__content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                  blanditiis omnis corporis cumque, laboriosam optio explicabo temporibus possimus libero voluptatum
+                  natus dolor expedita quaerat, consequatur earum veritatis nobis deserunt quas.</p>
+              </div>
+            </a>
+          </li>
+          <li class="menu__item menu__item_diet">
+            <a href="" class="menu__item-head">
+              <div class="menu__item-text">Для мясоедов</div>
+              <div class="menu__content">
+                <p class="menu__content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                  blanditiis omnis corporis cumque, laboriosam optio explicabo temporibus possimus libero voluptatum
+                  natus dolor expedita quaerat, consequatur earum veritatis nobis deserunt quas.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section reviews">
         <ul class="reviews__list">
           <li class="reviews__item" style="background-image: url('./image/reviewers/1.jpg')">
             <div class="reviews__content">
@@ -149,7 +236,7 @@
               <button class="button reviews">подробнее</button>
             </div>
           </li>
-          <li class="reviews__item" style="background-image: url('./image/reviewers/2.jpg')">
+          <li class="reviews__item head-cut" style="background-image: url('./image/reviewers/2.jpg')">
             <div class="reviews__content">
               <h3 class="reviews__content-head">Константин Спилберг</h3>
               <p class="rewiews__content-text">
@@ -221,15 +308,140 @@
           </li>
         </ul>
 
-      </div>
+      </section>
 
+      <section class="section order">
+
+        <div class="container">
+          <div class="screen-head">Закажите доставку</div>
+          <form class="order__form-tag" id="order-form">
+            <div class="order__form">
+              <div class="order__form-col">
+                <div class="order__form-row">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Имя</div>
+                    <input class="order__form-input" name="name" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Телефон</div>
+                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+                  </label>
+                </div>
+                <div class="order__form-row">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Улица</div>
+                    <input class="order__form-input" name="street" type="text" placeholder="">
+                  </label>
+                </div>
+                <div class="order__form-row">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Дом</div>
+                    <input class="order__form-input" name="home" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Корпус</div>
+                    <input class="order__form-input" name="part" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Квартира</div>
+                    <input class="order__form-input" name="appt" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Этаж</div>
+                    <input class="order__form-input" name="floor" type="text" placeholder="">
+                  </label>
+                </div>
+              </div>
+              <div class="order__form-col">
+                <div class="order__form-row">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Комментарий</div>
+                    <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+                  </label>
+                </div>
+                <div class="order__form-buttons">
+                  <div class="order__form-row">
+                    <label class="order__radio">
+                      <input class="order__radio-elem" name="payment" type="radio">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Потребуется сдача</div>
+                    </label>
+                    <label class="order__radio">
+                      <input class="order__radio-elem" name="payment" type="radio">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Оплата по карте</div>
+                    </label>
+                  </div>
+                  <div class="order__form-row">
+                    <label class="order__radio order__radio_checkbox">
+                      <input class="order__radio-elem" name="callback" type="checkbox">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Не перезванивать</div>
+                    </label>
+                  </div>
+                  <div class="order__form-row">
+                    <input class="order__form-button" name="" type="submit" value="Заказать">
+                    <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+      <section class="section map">
+        <div class="yandex"></div>
+        <footer class="footer">
+          <div class="container footer__content">
+            <div class="footer__col">
+              <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+              <a class="footer__phone" href="tel:+78123771377">
+                <svg class="footer__phone-pic">
+                  <use xlink:href="./svg/socials.svg#phone"></use>
+                </svg>+7 (812) 377-13-77</a>
+            </div>
+            <div class="footer__col footer__col-right">
+              <div class="socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <svg class="socials__link-icon" style="fill: #fff">
+                        <use xlink:href="./svg/socials.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <svg class="socials__link-icon" style="fill: #fff">
+                        <use xlink:href="./svg/socials.svg#fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <svg class="socials__link-icon" style="fill: #fff">
+                        <use xlink:href="./svg/socials.svg#inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <svg class="socials__link-icon" style="fill: #fff">
+                        <use xlink:href="./svg/socials.svg#tw"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
   </div>
-
-
-
-
-
 </body>
-
 </html>

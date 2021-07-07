@@ -1,7 +1,11 @@
 .screen-head {
   font-family: gagalin;
-  font-size: 72px;
+  font-size: rem(72px);
   margin-bottom: 0;
   color: $orange;
-  margin-bottom: 10px; //correction # 6
+  margin-bottom: rem(10px); 
+  line-height: rem(65px);
+  @include phones {
+    font-size: rem(65px);
+  }
 }
